@@ -14,17 +14,30 @@ Exercise vigilance regarding copycat or coat-tailing sites that seek to exploit 
 All LXC instances created using this repository come pre-installed with Midnight Commander, which is a command-line tool (`mc`) that offers a user-friendly file and directory management interface for the terminal environment.
 
 
+## 2025-03-30
+
+### 🚀 Updated Scripts
+
+  - #### ✨ New Features
+
+    - Open WebUI: Add Ollama update check [@tremor021](https://github.com/tremor021) ([#3478](https://github.com/community-scripts/ProxmoxVE/pull/3478))
+
 ## 2025-03-29
+
+### 🆕 New Scripts
+
+  - Alpine MariaDB [@MickLesk](https://github.com/MickLesk) ([#3456](https://github.com/community-scripts/ProxmoxVE/pull/3456))
 
 ### 🚀 Updated Scripts
 
   - #### 🐞 Bug Fixes
 
-    - GoMFT: Fix release archive naming [@tremor021](https://github.com/tremor021) ([#3483](https://github.com/gislevia/ProxmoxCommunityScripts/pull/3483))
-    - Homepage: Fix release parsing [@tremor021](https://github.com/tremor021) ([#3484](https://github.com/gislevia/ProxmoxCommunityScripts/pull/3484))
-    - Netdata: Fix debian-keyring dependency missing [@tremor021](https://github.com/tremor021) ([#3477](https://github.com/gislevia/ProxmoxCommunityScripts/pull/3477))
-    - ErsatzTV: Fix temp file reference [@tremor021](https://github.com/tremor021) ([#3476](https://github.com/gislevia/ProxmoxCommunityScripts/pull/3476))
-    - Komodo: Fix compose.env [@tremor021](https://github.com/tremor021) ([#3466](https://github.com/gislevia/ProxmoxCommunityScripts/pull/3466))
+    - Komodo: Fix wrong sed text [@tremor021](https://github.com/tremor021) ([#3491](https://github.com/community-scripts/ProxmoxVE/pull/3491))
+    - GoMFT: Fix release archive naming [@tremor021](https://github.com/tremor021) ([#3483](https://github.com/community-scripts/ProxmoxVE/pull/3483))
+    - Homepage: Fix release parsing [@tremor021](https://github.com/tremor021) ([#3484](https://github.com/community-scripts/ProxmoxVE/pull/3484))
+    - Netdata: Fix debian-keyring dependency missing [@tremor021](https://github.com/tremor021) ([#3477](https://github.com/community-scripts/ProxmoxVE/pull/3477))
+    - ErsatzTV: Fix temp file reference [@tremor021](https://github.com/tremor021) ([#3476](https://github.com/community-scripts/ProxmoxVE/pull/3476))
+    - Komodo: Fix compose.env [@tremor021](https://github.com/tremor021) ([#3466](https://github.com/community-scripts/ProxmoxVE/pull/3466))
 
 ## 2025-03-28
 
