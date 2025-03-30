@@ -27,8 +27,8 @@
         }
     ],
     "default_credentials": {
-        "username": "admin@helper-scripts.com",
-        "password": "helper-scripts.com"
+        "username": "EMAIL_PLACEHOLDER",
+        "password": "PASSWORD_PLCEHOLDER"
     },
     "notes": []
 }

@@ -72,10 +72,10 @@ $STD expect <<EOF
 set timeout -1
 log_user 0
 
-spawn bin/console kimai:user:create admin admin@helper-scripts.com ROLE_SUPER_ADMIN
+spawn bin/console kimai:user:create admin EMAIL_PLACEHOLDER ROLE_SUPER_ADMIN
 
 expect "Please enter the password:"
-send "helper-scripts.com\r"
+send "PASSWORD_PLACEHOLDER\r"
 
 expect eof
 EOF

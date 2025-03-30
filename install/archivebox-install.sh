@@ -70,10 +70,10 @@ expect "Email address"
 send "\r"
 
 expect "Password"
-send "helper-scripts.com\r"
+send "PASSWORD_PLACEHOLDER\r"
 
 expect "Password (again)"
-send "helper-scripts.com\r"
+send "PASSWORD_PLACEHOLDER\r"
 
 expect eof
 EOF

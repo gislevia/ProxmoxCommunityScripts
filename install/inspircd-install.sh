@@ -19,7 +19,7 @@ cd /opt
 wget -q https://github.com/inspircd/inspircd/releases/download/v${RELEASE}/inspircd_${RELEASE}.deb12u1_amd64.deb
 $STD apt-get install "./inspircd_${RELEASE}.deb12u1_amd64.deb" -y &>/dev/null
 cat <<EOF >/etc/inspircd/inspircd.conf
-<define name="networkDomain" value="helper-scripts.com">
+<define name="networkDomain" value="SITE_PLACEHOLDER">
 <define name="networkName" value="Proxmox VE Helper-Scripts">
 
 <server

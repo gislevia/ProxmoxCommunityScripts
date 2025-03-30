@@ -135,8 +135,8 @@ if [[ "${install_prompt,,}" =~ ^(y|yes)$ ]]; then
         cd /usr/local/community-scripts
         filebrowser config init -a '0.0.0.0' -p "$PORT" -d "$DB_PATH" &>/dev/null
         filebrowser config set -a '0.0.0.0' -p "$PORT" -d "$DB_PATH" &>/dev/null
-        filebrowser users add admin helper-scripts.com --perm.admin --database "$DB_PATH" &>/dev/null
-        msg_ok "Default authentication configured (admin:helper-scripts.com)"
+        filebrowser users add admin PASSWORD_PLACEHOLDER --perm.admin --database "$DB_PATH" &>/dev/null
+        msg_ok "Default authentication configured (admin:PASSWORD_PLACEHOLDER)"
     fi
 
     msg_info "Creating service"
