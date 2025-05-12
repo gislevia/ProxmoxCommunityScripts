@@ -50,7 +50,7 @@ if [ -z "$containers" ]; then
     exit 1
 fi
 
-menu_items=()
+menu_items=("ALL" "Delete ALL containers" "OFF") # Add as first option
 FORMAT="%-10s %-15s %-10s"
 
 while read -r container; do
@@ -75,6 +75,11 @@ read -p "Delete containers manually or automatically? (Default: manual) m/a: " D
 DELETE_MODE=${DELETE_MODE:-m}
 
 selected_ids=$(echo "$CHOICES" | tr -d '"' | tr -s ' ' '\n')
+
+# If "ALL" is selected, override with all container IDs
+if echo "$selected_ids" | grep -q "^ALL$"; then
+  selected_ids=$(echo "$containers" | awk '{print $1}')
+fi
 
 for container_id in $selected_ids; do
     status=$(pct status $container_id)

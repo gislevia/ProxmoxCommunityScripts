@@ -49,7 +49,7 @@ function update_script() {
     msg_info "Updating VaultWarden to $VAULT (Patience)"
     cd ~ && rm -rf vaultwarden
     $STD git clone https://github.com/dani-garcia/vaultwarden
-    cd vaultwarden || exit
+    cd vaultwarden
     $STD cargo build --features "sqlite,mysql,postgresql" --release
     DIR=/usr/bin/vaultwarden
     if [ -d "$DIR" ]; then
@@ -112,4 +112,4 @@ description
 msg_ok "Completed Successfully!\n"
 echo -e "${CREATING}${GN}${APP} setup has been successfully initialized!${CL}"
 echo -e "${INFO}${YW} Access it using the following URL:${CL}"
-echo -e "${TAB}${GATEWAY}${BGN}http://${IP}:8000${CL}"
+echo -e "${TAB}${GATEWAY}${BGN}https://${IP}:8000${CL}"
