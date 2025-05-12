@@ -2,14 +2,14 @@
 source <(curl -s https://raw.githubusercontent.com/gislevia/ProxmoxCommunityScripts/main/misc/build.func)
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: [YourUserName]
-# License: MIT | https://github.com/gislevia/ProxmoxCommunityScripts/raw/main/LICENSE
+# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: [SOURCE_URL]
 
 # App Default Values
 APP="[APP_NAME]"
 # Name of the app (e.g. Google, Adventurelog, Apache-Guacamole"
 var_tags="[TAGS]"
-# Tags for Proxmox VE, maximum 2 pcs., no spaces allowed, separated by a semicolon ; (e.g. database | adblock;dhcp) 
+# Tags for Proxmox VE, maximum 2 pcs., no spaces allowed, separated by a semicolon ; (e.g. database | adblock;dhcp)
 var_cpu="[CPU]"
 # Number of cores (1-X) (e.g. 4) - default are 2
 var_ram="[RAM]"
