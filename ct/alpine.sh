@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/gislevia/ProxmoxCommunityScripts/main/misc/build.func)
 # Copyright (c) 2021-2025 tteck
 # Author: tteck (tteckster)
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
@@ -22,7 +22,7 @@ catch_errors
 function update_script() {
   UPD=$(
     whiptail --backtitle "Proxmox VE Helper Scripts" --title "SUPPORT" --radiolist --cancel-button Exit-Script "Spacebar = Select" 11 58 1 \
-    "1" "Check for Alpine Updates" ON \
+      "1" "Check for Alpine Updates" ON \
       3>&1 1>&2 2>&3
   )
 
